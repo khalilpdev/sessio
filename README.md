@@ -33,18 +33,29 @@ Sessio remembers everything.
 - 🔒 Privacy-first (local SQLite database)
 - ⚡ Fast incremental indexing
 
+## Current status
+
+Sessio now includes an initial Rust CLI bootstrap.
+
+- `cargo run -- --help` shows the command surface
+- `sessio index`
+- `sessio search <query>`
+- `sessio recent`
+- `sessio continue`
+- `sessio dashboard`
+
+Today these commands provide friendly placeholders while the indexing, search, timeline, and dashboard features are built out on top of the local SQLite foundation.
+
 ## Example
 
 ```bash
 sessio index
 
-sessio this
+sessio search jwt
 
 sessio recent
 
 sessio continue
-
-sessio search jwt
 
 sessio dashboard
 ```
